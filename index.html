@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>        
+        .form {
+            left      : 50%;
+            top       : 20%;
+            position  : absolute;
+            transform : translate(-50%, -20%);
+        }
+        .h{
+            text-align : center;
+            padding-top: 4%;
+        }
+    </style>
+    <title>Whatsapp Direct</title>
+  </head>
+  <body>
+      <h1 class="h" >Whatsapp Direct</h1>
+      <div >
+        <form class="form">
+            <div class="form-group" >
+              <input type="number" class="form-control" id="phone_input" placeholder="Phone number">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+            </div>
+    
+            <button type="button" class="btn btn-success" onclick="fun()">Message</button>
+            <button  type="button" class="btn btn-primary" onclick="window.location.href='https://www.instagram.com/techmatetripathi/'">Support</button>
+        </form>   
+      </div>
+
+    <script >
+        function fun(){
+            window.location = "http://wa.me/91" + document.getElementById("phone_input").value;
+        }
+    </script>
+  </body>
+</html>
